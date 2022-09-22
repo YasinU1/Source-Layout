@@ -1,0 +1,271 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  clear: both;
+  padding-top: 25px;
+  background: rgb(246 249 252);
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline;
+  float: left;
+  width: 10%;
+  list-style: none;
+}
+
+li img{
+  width: 25px;
+}
+
+li + li{
+  padding-left: 50px;
+  font-weight: 600;
+
+}
+a{  
+  text-decoration: none;
+  color: rgb(86	102	121);
+}
+
+#logo{
+  width: 30%;
+  padding-right: 25px;
+  color: rgb(86	102	121);
+}
+
+#logoheader {
+  padding: 0px;
+  font-size: 28px;
+  padding-right: 25px;
+  color: rgb(86	102	121);
+  margin: -5px;
+  margin-top: -16px;
+}
+
+#sourceBtn {
+  width: 27%;
+  text-align: end;
+  padding: 0 10px;
+
+}
+#sourceBtn a{
+  color: white; 
+  background-color: rgb(51	69	89);
+  padding: 11px 28px;
+}
+
+main{
+  padding-top: 40px;
+
+  background: rgb(246 249 252);
+}
+
+
+section{
+  float: left;
+  width: 25%;
+  height: 450px;
+  background: rgb(246	249	252)	;
+  padding: 25px;
+}
+
+#mainSection{
+  width: 50%;
+  
+}
+#mainSection img {
+  width: 549px;
+  margin-left: 136px;
+}
+
+main section:first-child{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+main section h1{
+  color: rgb(0,45,71) ;
+  font-size: 50px;
+  padding-right: 98px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+}
+main section span{
+  color: rgb(169	184	197) ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+
+}
+p {
+  color: rgb(128	141	153	);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-right: 51px;
+}
+
+#form input{
+  border: none;
+  background-color: rgb(225	233	240	);
+  height: 40px;
+  width: 260px;
+}
+
+#form input::placeholder{
+color: rgb(169	184	197);
+font-size: 15px;
+padding: 5px;
+}
+#form input{
+  border: none;
+  background-color: rgb(225	233	240	);
+  height: 40px;
+  width: 260px;
+}
+
+#form #sourceBtn{
+  margin-left: 231px;
+  margin-top: -47px;
+}
+
+main section form + p{
+padding-right: 175px;
+
+}
+
+section a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(0,0 , 0) ;
+}
+#feature {
+  height: 281px;
+  padding-left: 50px;
+}
+
+#new{
+  background: white;
+  padding-top: 25px;
+  width: 40%;
+  color: rgb(0,45,71) ;
+  padding-left: 80px;
+  height: 250px;
+}
+#new h1{
+  font-size: 35px;
+  font-family: 'Roboto';
+  font-weight: bolder;
+}
+#new p{
+
+  font-family: 'Roboto';
+  font-weight: bolder;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media screen and (max-width:1000px) {
+
+  section{
+    width: 100%;
+  }
+
+  #mainSection{
+    width: 100%;
+    
+  }
+
+
+
+  body{
+    background: rgb(246	249	252)	;
+  }
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+  main section:first-child {
+    padding-right: 0;
+    padding-left: 25px;
+    height: 400px
+  }
+  main section span {
+    font-size: 15px;
+    }
+
+  
+#form input{
+
+  width: 95%;
+}
+
+#form #sourceBtn{
+  margin-left: 0px;
+  margin-top: 30px;
+  padding: 0px 0px;
+  padding-bottom: 25px;
+}
+
+#form #sourceBtn a{
+padding: 11px 252px;
+}
+#mainSection img {
+  width: 430px;
+  margin-left: 136px;
+}
+#new h1, #new p{
+  padding-right: 0;
+  margin-right: -10px;
+
+}
+
+section#new{
+  padding-left: 25px;
+  width: 100%;
+  background-color: white;
+}
+nav li + li{
+  display: none;
+}
+nav{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.327);
+  padding-bottom: 30px;
+}
+}
